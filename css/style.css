@@ -266,10 +266,11 @@
         position: absolute;
         padding: .8em;
         bottom: .5em;
-        background-color: var(--color-paragraph);
+        background-color: var(--color-bg);
         font-weight: 600;
         transform: scale(0);
         transition: .3s;
+        color: var(--color-title);
     }
 
     .productsInner:hover p{
