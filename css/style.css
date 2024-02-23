@@ -282,7 +282,62 @@
 
 
 /*#region gallery*/
+    #gallery{
+        background-color: var(--color-base);
+    }
 
+    .galleryContainer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        column-gap: .8em;
+        row-gap: .6em;
+        padding: 0 12em;
+    }
+
+    .galleryInner{
+        width: 20%;
+        padding: .5em;
+    }
+
+    .galleryInner img{
+        width: 100%;
+        height: auto;
+        transition: .5s;
+        filter: brightness(50%) saturate(0%);
+    }
+
+    .galleryInner img:hover{
+        filter: saturate(100%);
+    }
+
+    .filter{
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+    }
+
+    .filter li{
+        display: inline;
+        padding: .8em 1.8em;
+        font-size: var(--text-paragraph);
+        cursor: pointer;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        transition: .5s;
+        color: var(--color-title);
+    }
+
+    .filter li:hover{
+        color: var(--color-tertiary);
+    }
+
+    .filter li.active{
+        background-color: var(--color-title);
+        color: var(--color-base);
+        border-radius: 3px;
+    }
 
 /*#endregion*/
 
@@ -355,6 +410,7 @@
     }
 
 /*#endregion*/
+
 
 /*#region Footer*/
     .footerContainer{
