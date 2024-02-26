@@ -440,6 +440,9 @@
 /*#endregion*/
 
 
+/******/
+
+
 /* THANKS.HTML */
 /*#region thanks*/
 .thanks{
@@ -482,21 +485,26 @@
 /*#endregion*/
 
 
+/******/
+
+
 /* PROFILE.HTML */
 /*#region thanks*/
 .containerOne{
     width: 100%;
     height: 95vh;
     background-color: var(--color-base);
-    padding: 10em ;
+    padding: 5em ;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: var(--color-title);
+    
 }
 
 .containerOne ul{
-    flex-basis: 31%;
+    
+    flex-basis: 30%;
     text-align: left;
     font-size: var(--text-paragraph);
 }
@@ -505,17 +513,30 @@
     padding: 1em;
 }
 
+.leftSide{
+    padding: 3em;
+    border-right: thick double;
+    border-right-color: var(--color-title);
+    height: 90vh;
+}
+
 .leftSide img{
-    
-    max-width:300px;
+    max-width:310px;
     width: auto;
     height: auto;
+}
 
+.rightSide{
+    padding: 3em;
 }
 
 .rightSide h1{
     font-size: var(--text-logo);
     line-height: 1.5em;
+}
+
+.rightSide h2 span{
+    color: var(--color-tertiary);
 }
 
 .footerProfile{
@@ -524,14 +545,25 @@
     background-color: var(--color-base);
     display: flex;
     flex-direction: row;
-    padding: 0 35em;
+    padding: 0 33em;
+    letter-spacing: .4em;
 }
 
 .footerProfile li{
     color: var(--color-title);
     font-size: var(--text-title);
+    filter: brightness(50%) saturate(0%);
+    transition: .5s;
+    
 }
- /* Text align justify
-    Border left de um dos lados */
+
+.footerProfile li:hover{
+    transform: scale(1.5);
+    filter: saturate(100%);
+    transition: .7s;
+    cursor: pointer;
+}
+
+ /*Border left de um dos lados */
 
 /*#endregion*/
